@@ -110,38 +110,40 @@ ul,
         color: #0000FF;
         border-bottom: 1px dashed #0000FF
     }
-}
 
-#navigation li:not(:last-child)::after {
+    & li:not(:last-child)::after {
         margin: 0 10px;
         content: "|";
         color: #9c276d;
     }
+}
 
 .nav-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-links li {
-  padding: 8px 0;
-  border-bottom: 1px solid #9c276d; /* linea rosa abajo de cada texto */
+    padding: 8px 0;
+    border-bottom: 1px solid #9c276d;
+    /* linea rosa abajo de cada texto */
 }
 
 .nav-links li:last-child {
-  border-bottom: none; 
+    border-bottom: none;
 }
 
 .nav-links a {
-  color: #9c276d; /* rosita para enlaces */
-  text-decoration: none;
-  transition: color 0.2s;
+    color: #9c276d;
+    /* rosita para enlaces */
+    text-decoration: none;
+    transition: color 0.2s;
 }
 
 .nav-links a:hover {
-  color: #d13a9c; 
-  text-decoration: underline;
+    color: #d13a9c;
+    text-decoration: underline;
 }
 
 
@@ -223,23 +225,23 @@ h2 {
 }
 
 .content.right .content-box {
-  max-height: 200px; 
-  overflow-y: auto;
+    max-height: 200px;
+    overflow-y: auto;
 }
 
 .content.left .content-box {
-  max-height: 400px; 
-  overflow-y: auto;
+    max-height: 400px;
+    overflow-y: auto;
 }
 
 .updates-scroll {
-  max-height: 150px; 
-  overflow-y: auto;
-  padding-right: 8px; 
+    max-height: 150px;
+    overflow-y: auto;
+    padding-right: 8px;
 }
 
 .nav-scroll {
-  max-height: 300px; 
-  overflow-y: auto;
-  padding-right: 8px; 
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 8px;
 }
