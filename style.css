@@ -43,7 +43,7 @@ mark {
 
 /* BASE PRINCIPAL */
 main {
-    width: 900px;
+    width: 1100px;
     height: 900px;
     margin: 30px auto 0 auto;
     /* LA FUNCIÓN 'AUTO' MANTIENE CENTRADO EL SITIO */
@@ -135,12 +135,22 @@ PARA ESTO REQUERIMOS EL ELEMENTO 'CLASS' QUE SE IDENTIFICA CON UN PUNTO (.) AL I
 
     /* border:1px solid #000; PUEDES AÑADIR UN BORDE COMO GUÍA PARA LAS MEDIDAS*/
     &.left {
-        width: 280px
+        width: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between
     }
 
     /* ES IMPORTANTE COLOCAR AL INICIO '&.' PARA QUE EL CÓDIGO LOS IDENTIFIQUE COMO UNA EXTENSIÓN DEL MISMO ELEMENTO Y SÓLO SEA EJECUTABLE DENTRO DE ESTE*/
+    &.center {
+        width: 530px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between
+    }
+
     &.right {
-        width: 550px;
+        width: 250px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between
@@ -167,7 +177,7 @@ h2 {
 }
 
 .box-small {
-    width: 265px;
+    width: 260px;
     margin-top: 20px
 }
 
@@ -177,4 +187,22 @@ h2 {
     margin-top: 10px;
     background-color: #ffd4ec;
     text-align: center
+}
+
+.Highlight-text {
+    background-color: #ffd4ec;
+    font-weight: 600;
+    padding: 2px 5px;
+    border-radius: 5px
+}
+
+.content.right .content-box {
+  max-height: 200px; 
+  overflow-y: auto;
+}
+
+.updates-scroll {
+  max-height: 150px; 
+  overflow-y: auto;
+  padding-right: 8px; 
 }
