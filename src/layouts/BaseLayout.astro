@@ -1,0 +1,31 @@
+---
+export interface Props {
+  title?: string;
+}
+
+const { title = "yoyo yuu" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Ícono del sitio -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Estilos globales -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <title>{title}</title>
+  </head>
+
+  <body>
+    <main>
+      <!-- Aquí se renderiza el contenido de cada página -->
+      <slot />
+
+    </main>
+  </body>
+</html>
