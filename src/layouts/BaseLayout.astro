@@ -4,28 +4,33 @@ export interface Props {
 }
 
 const { title = "yoyo yuu" } = Astro.props;
+import Footer from "../components/core/Footer.astro";
+import Header from "../components/core/Header.astro";
+import Navigation from "../components/Navigation.astro";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-
-    <!-- Ícono del sitio -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
-    <!-- Estilos globales -->
-    <link rel="stylesheet" href="/style.css" />
 
     <title>{title}</title>
   </head>
 
-  <body>
-    <main>
-      <!-- Aquí se renderiza el contenido de cada página -->
-      <slot />
-
-    </main>
+  <body
+    class="bg-white bg-[url('img_index/fondo-.gif')] font-trebuchet text-[15px] text-brand-dark-pink min-h-screen"
+  >
+    <div class="min-h-screen flex items-start justify-center p-4">
+      <main
+        class="w-[1100px] bg-white border-2 border-dashed border-brand-pink rounded-lg shadow-[0_0_0_10px_#FFFFFF] [box-shadow:0_0_0_10px_#FFFFFF,2px_0_0_#972469,0_2px_0_#972469,-2px_0_0_#972469,0_-2px_0_#972469] overflow-auto"
+      >
+        <Header />
+        <Navigation />
+        <slot />
+        <Footer />
+      </main>
+    </div>
   </body>
 </html>

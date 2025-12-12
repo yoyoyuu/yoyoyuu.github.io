@@ -1,14 +1,19 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-
-import Header from "../components/core/Header.astro";
 import Navigation from "../components/Navigation.astro";
 import LeftNav from "../components/LeftNav.astro";
 import MainContent from "../components/MainContent.astro";
 import Updates from "../components/Updates.astro";
-import Footer from "../components/core/Footer.astro";
-// NOTA: Checar porque falla el github pages al hacer deploy
 ---
+
+<BaseLayout title="yoyo yuu">  
+  <div id="content-flex" class="flex justify-evenly items-start mt-4">
+    <LeftNav />
+    <MainContent />
+    <Updates />
+  </div>
+  
+</BaseLayout>
 
 <!--
                          #################                          
@@ -54,17 +59,3 @@ Y CONTRIBUYE EL CRECIMIENTO Y DESARROLLO DE LA COMUNIDAD WEB!
 
 @M3LODY_ZALD1VAR, HTTPS://MELODY-NOMAS.NEOCITIES.ORG/
 -->
-
-<BaseLayout title="yoyo yuu">
-  <Header />
-
-  <Navigation />
-
-  <div id="content-flex">
-    <LeftNav />
-    <MainContent />
-    <Updates />
-  </div>
-
-  <Footer />
-</BaseLayout>

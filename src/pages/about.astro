@@ -1,101 +1,140 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/core/Header.astro";
+import Navigation from "../components/Navigation.astro";
 ---
 
-<BaseLayout title="About me - yoyo yuu">
-    <div id="content-flex" class="about-layout">
+<BaseLayout title="About me - yoyo yuu">  
+  <div id="content-flex" class="flex justify-evenly items-start mt-4">
+    <!-- LEFT SIDE - IDENTITY INFO -->
+    <div class="content left w-[250px]">
+      <div class="content-box border border-brand-pink overflow-hidden">
+        <img
+          src="/img/yoyome.png"
+          alt="Yoyo yuu"
+          class="w-[235px] h-[235px] object-cover block mx-auto my-4"
+        />
+        <h2 class="m-0 p-[8px] bg-brand-light-pink text-[18px] font-rock-bold text-center border-b border-brand-pink">SOME YOYO INFO</h2>
 
-        <!-- LEFT SIDE -->
-        <div class="content left about-left">
-            <div class="content-box">
-                <img src="/img/yoyome.png" alt="Yoyo yuu" class="profile-pic"/>
-                <h2>Identity Info</h2>
-                <li>she/her</li>
-                <li>Mexican</li>
-                <li>20 y.o.</li>
-                <li>Spanish(native), English(B1)</li>
-                <li>Software Engineer Student</li>
-                <li>Digital artist</li>
-            </div>
+        <div class="p-3">
+          <ul class="list-[url('img_index/icon-.gif')] list-inside text-sm space-y-1 m-0 p-0">
+            <li>she/her</li>
+            <li>Mexican</li>
+            <li>20 y.o.</li>
+            <li>May 28th, 2005</li>
+            <li>Spanish(native), English(B1)</li>
+            <li>Software Engineer Student</li>
+            <li>Digital artist</li>
+          </ul>
         </div>
-
-        <!-- CENTER CONTENT -->
-        <div class="content center about-center">
-            <!-- SOBRE MÍ -->
-            <div class="content-box">
-                <h2>SOBRE MÍ</h2>
-                <p>
-                    ¡Holiiii! Me llamo Isis Vanesa, pero en internet me conocen
-                    como Yoyo, yoyo yuu, yoyonia, como sea!
-                </p>
-                <p>
-                    Soy un intento de artista digital que disfruta de dibujar
-                    sus personajes favoritos. Me encantan muchas cosas y cuando
-                    me obsesiono con un personaje, va totalmente en serio
-                    lamentablemente (o afortunadamente).
-                </p>
-            </div>
-
-            <!-- POR QUÉ ESTE SITIO -->
-            <div class="content-box">
-                <h2>¿Por qué un sitio web?</h2>
-                <p class="Justify-text">
-                    Mi propósito al crear un sitio web es tener un espacio
-                    totalmente personal donde tengo control absoluto sobre lo
-                    que comparto y cómo lo comparto, sin depender de plataformas
-                    externas.
-                </p>
-                <p>
-                    También sigo aprendiendo desarrollo web como hobby entre
-                    vacaciones, y con los conocimientos que adquiero como
-                    estudiante de ingeniería en software, este sitio me permite
-                    practicar, experimentar y mejorar mis habilidades.
-                </p>
-            </div>
-        </div>
-
-        <!-- RIGHT SIDE -->
-        <div class="content right about-right">
-            <div class="content-box interests-table">
-                <h2>INTERESES</h2>
-
-                <div class="interests-row">
-                    <div class="category">
-                        <h3>General</h3>
-                        <li>Dibujo digital</li>
-                        <li>OCs & historias</li>
-                        <li>Anime y Manga</li>
-                        <li>Videojuegos casuales</li>
-                        <li>Diseño web</li>
-                    </div>
-
-                    <div class="category">
-                        <h3>Series</h3>
-                        <li>Boku no Hero Academia</li>
-                        <li>Jojo's Bizzare Adventure</li>
-                        <li>Spy x Family</li>
-                        <li>Shumatsu no Valkyrie</li>
-                    </div>
-                </div>
-
-                <div class="interests-row">
-                    <div class="category">
-                        <h3>Música</h3>
-                        <li>Queen</li>
-                        <li>ABBA</li>
-                        <li>Vocaloid</li>
-                        <li>Lady Gaga</li>
-                    </div>
-
-                    <div class="category">
-                        <h3>Videojuegos</h3>
-                        <li>Pokemon</li>
-                        <li>Deltarune</li>
-                        <li>Lo que me obsesione ese mes</li>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+      </div>
     </div>
+
+    <!-- CENTER CONTENT - SOBRE MÍ -->
+    <div class="content center w-[530px]">
+      <!-- SOBRE MÍ -->
+      <div class="content-box w-full mb-5 border border-brand-pink">
+        <h2 class="m-0 p-[5px] bg-brand-light-pink text-[18px] font-rock-bold text-center border-b border-brand-pink">
+          SOBRE MÍ
+        </h2>
+        <div class="p-3">
+          <p class="my-2">
+            ¡Holiiii! Me llamo Isis Vanesa, pero en internet me conocen como Yoyo, yoyo yuu, yoyonia, como sea!
+          </p>
+          <p class="my-2">
+            Soy un intento de artista digital que disfruta de dibujar sus personajes favoritos. Me encantan muchas cosas y cuando me obsesiono con un personaje, va totalmente en serio lamentablemente (o afortunadamente).
+          </p>
+        </div>
+      </div>
+
+      <!-- POR QUÉ ESTE SITIO -->
+      <div class="content-box w-full border border-brand-pink">
+        <h2 class="m-0 p-[5px] bg-brand-light-pink text-[18px] font-rock-bold text-center border-b border-brand-pink">
+          ¿Por qué un sitio web?
+        </h2>
+        <div class="p-3">
+          <p class="my-2">
+            Mi propósito al crear un sitio web es tener un espacio totalmente personal donde tengo control absoluto sobre lo que comparto y cómo lo comparto, sin depender de plataformas externas.
+          </p>
+          <p class="my-2">
+            También sigo aprendiendo desarrollo web como hobby entre vacaciones, y con los conocimientos que adquiero como estudiante de ingeniería en software, este sitio me permite practicar, experimentar y mejorar mis habilidades.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE - INTERESES (estructura como la imagen) -->
+    <div class="content right w-[250px]">
+      <div class="content-box border border-brand-pink">
+        <h2 class="m-0 p-[5px] bg-brand-light-pink text-[18px] font-rock-bold text-center border-b border-brand-pink">
+          INTERESES
+        </h2>
+        <div class="p-4">
+          <!-- General -->
+          <div class="mb-5">
+            <h3 class="m-0 mb-2 text-[16px] font-rock-bold text-brand-pink border-b border-brand-pink/30 pb-1">
+              General
+            </h3>
+            <ul class="list-[url('img_index/icon-.gif')] list-inside text-sm space-y-1 m-0 p-0">
+              <li>Dibujo digital</li>
+              <li>OCs & historias</li>
+              <li>Anime y Manga</li>
+              <li>Videojuegos casuales</li>
+              <li>Diseño web</li>
+            </ul>
+          </div>
+
+          <!-- Series -->
+          <div class="mb-5">
+            <h3 class="m-0 mb-2 text-[16px] font-rock-bold text-brand-pink border-b border-brand-pink/30 pb-1">
+              Series
+            </h3>
+            <ul class="list-[url('img_index/icon-.gif')] list-inside text-sm space-y-1 m-0 p-0">
+              <li>Boku no Hero Academia</li>
+              <li>Jojo's Bizzare Adventure</li>
+              <li>Spy x Family</li>
+              <li>Shumatsu no Valkyrie</li>
+            </ul>
+          </div>
+
+          <!-- Música -->
+          <div class="mb-5">
+            <h3 class="m-0 mb-2 text-[16px] font-rock-bold text-brand-pink border-b border-brand-pink/30 pb-1">
+              Música
+            </h3>
+            <ul class="list-[url('img_index/icon-.gif')] list-inside text-sm space-y-1 m-0 p-0">
+              <li>Queen</li>
+              <li>ABBA</li>
+              <li>Vocaloid</li>
+              <li>Lady Gaga</li>
+            </ul>
+          </div>
+
+          <!-- Videojuegos -->
+          <div class="mb-5">
+            <h3 class="m-0 mb-2 text-[16px] font-rock-bold text-brand-pink border-b border-brand-pink/30 pb-1">
+              Videojuegos
+            </h3>
+            <ul class="list-[url('img_index/icon-.gif')] list-inside text-sm space-y-1 m-0 p-0">
+              <li>Pokemon</li>
+              <li>Deltarune</li>
+              <li>Lo que me obsesione ese mes</li>
+            </ul>
+          </div>
+
+          <!-- Si quieres agregar más como en la imagen: -->
+          <div class="mb-5">
+            <h3 class="m-0 mb-2 text-[16px] font-rock-bold text-brand-pink border-b border-brand-pink/30 pb-1">
+              Libros/Manga
+            </h3>
+            <ul class="list-[url('img_index/icon-.gif')] list-inside text-sm space-y-1 m-0 p-0">
+              <li>Boku no Hero Academia (manga)</li>
+              <li>Spy x Family (manga)</li>
+              <li>Varios fanfics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </BaseLayout>

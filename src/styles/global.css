@@ -1,29 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* my font */
 @font-face {
   font-family: 'Rock Bold';
-  src: url('/public/fonts/Rockwell-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-/* Some stuff that i can't do with tailwind i fear */
-@layer utilities {
-  .list-icon-custom {
-    list-style: url('/public/img/icon-.gif') inside;
-  }
-  
-  .text-shadow-pink {
-    filter: drop-shadow(2px 0 0 #972469) 
-            drop-shadow(0 2px 0 #972469)
-            drop-shadow(-2px 0 0 #972469)
-            drop-shadow(0 -2px 0 #972469);
-  }
-  
-  .border-dashed-pink {
-    border: 2px dashed #972469;
-  }
+  src: url('/Rockwell-Bold.ttf') format('truetype');
 }
