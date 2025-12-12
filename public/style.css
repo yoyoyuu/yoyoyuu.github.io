@@ -1,83 +1,71 @@
 /* RECOMENDACIONES:
 EVITA LOS ARCHIVOS GRÁFICOS CON LAS TERMINACIONES WEBP.
-SE RECOMIENDA NO HACER 'HOTLINK' A MENOS QUE SEA DE TU PROPIO ESPACIO DE ALMACENAMIENTO EN LÍNEA (FILE GARDEN, IMGUR Y CAT BOX, NEOCITIES, NEKOWEB...) */
+SE RECOMIENDA NO HACER 'HOTLINK' A MENOS QUE SEA DE TU PROPIO ESPACIO DE ALMACENAMIENTO */
 
 /* AJUSTES GENERALES DEL SITIO */
 body {
     background-color: #FFFFFF;
     background-image: url('img_index/fondo-.gif');
     font: 400 15px 'Trebuchet MS';
-    /*GROSOR / TAMAÑO / NOMBRE DE LA FUENTE*/
-    color: #72124c
-        /* COLOR GENERAL DE LA FUENTE */
+    color: #72124c;
 }
 
 @font-face {
-    /* ESTA FUNCIÓN TE PERMITE INSTALAR FUENTES PERSONALIZADAS */
     font-family: 'Rock Bold';
-    src: url('Rockwell-Bold.ttf')
+    src: url('Rockwell-Bold.ttf');
 }
 
 a {
-    color: #0000FF
+    color: #0000FF;
 }
 
-/* ASPECTO GENERAL DE ENLACES (a) */
 p {
-    margin: 10px
+    margin: 10px;
 }
 
-/* AJUSTES DEL ELEMENTO 'PARRAFO' (p) */
 li {
     margin: 10px;
-    list-style: url('img_index/icon-.gif') inside
+    list-style: url('img_index/icon-.gif') inside;
 }
 
-/* AJUSTES DEL ELEMENTO 'LISTA' (li) */
 mark {
-    background-color: #ffd4ec
+    background-color: #ffd4ec;
 }
-
-/*ESTO ES COMO UN MARCATEXTOS LOL*/
-
 
 /* BASE PRINCIPAL */
 main {
     width: 1100px;
     height: 900px;
     margin: 30px auto 0 auto;
-    /* LA FUNCIÓN 'AUTO' MANTIENE CENTRADO EL SITIO */
     background-color: #FFFFFF;
     border: 2px dashed #972469;
     border-radius: 10px;
     box-shadow: 0 0 0 10px #FFFFFF;
     box-sizing: border-box;
-    filter: drop-shadow(2px 0 0 #972469) drop-shadow(0 2px 0 #972469) drop-shadow(-2px 0 0 #972469) drop-shadow(0 -2px 0 #972469);
-    overflow: hidden
+    filter: drop-shadow(2px 0 0 #972469) drop-shadow(0 2px 0 #972469)
+        drop-shadow(-2px 0 0 #972469) drop-shadow(0 -2px 0 #972469);
+    overflow: hidden;
 }
 
-
-/* HEADER-SETTINGS */
+/* HEADER */
 header {
     padding: 20px 0;
-    /* ARRIBA / ABAJO — DERECHA / IZQUIERA */
     background-color: #FFFFFF;
     font-size: 16px;
-    text-align: center
+    text-align: center;
 }
 
 h1 {
-    /* TÍTULO PRINCIPAL */
     margin: 0;
     margin-top: 5px;
     font: 50px 'Rock Bold';
     font-style: italic;
     color: #FFFFFF;
-    filter: drop-shadow(2px 0 0 #972469) drop-shadow(0 2px 0 #972469) drop-shadow(-2px 0 0 #972469) drop-shadow(0 -2px 0 #972469)
+    filter: drop-shadow(2px 0 0 #972469) drop-shadow(0 2px 0 #972469)
+        drop-shadow(-2px 0 0 #972469) drop-shadow(0 -2px 0 #972469);
 }
 
-
-/* NAVIGATION-SETTINGS */
+/* NAVIGATION */
 #navigation {
     width: 100%;
     padding: 5px 0;
@@ -85,17 +73,15 @@ h1 {
     border-bottom: 2px solid #ffd4ec;
     font-size: 16px;
     font-weight: 500;
-    text-align: center
+    text-align: center;
 }
 
-ul {
+#navigation ul {
     list-style-type: none;
     padding: 5px;
-    margin: 0
+    margin: 0;
 }
 
-#navigation a,
-ul,
 #navigation li {
     margin: 0;
     display: inline;
@@ -103,21 +89,25 @@ ul,
     color: #972469;
     text-transform: uppercase;
     letter-spacing: 1px;
-    text-decoration: none;
+}
 
-    & a:hover {
-        /* 'HOVER' CAMBIA EL ASPECTO DE UN ELEMENTO CUANDO COLOCAS EL CURSOR ENCIMA */
-        color: #0000FF;
-        border-bottom: 1px dashed #0000FF
-    }
+#navigation a {
+    color: #972469;
+    text-decoration: none;
+}
+
+#navigation a:hover {
+    color: #0000FF;
+    border-bottom: 1px dashed #0000FF;
 }
 
 #navigation li:not(:last-child)::after {
-        margin: 0 10px;
-        content: "|";
-        color: #9c276d;
-    }
+    margin: 0 10px;
+    content: "|";
+    color: #9c276d;
+}
 
+/* MENU LATERAL */
 .nav-links {
   list-style: none;
   padding: 0;
@@ -126,70 +116,63 @@ ul,
 
 .nav-links li {
   padding: 8px 0;
-  border-bottom: 1px solid #9c276d; /* linea rosa abajo de cada texto */
+  border-bottom: 1px solid #9c276d;
 }
 
 .nav-links li:last-child {
-  border-bottom: none; 
+  border-bottom: none;
 }
 
 .nav-links a {
-  color: #9c276d; /* rosita para enlaces */
+  color: #9c276d;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .nav-links a:hover {
-  color: #d13a9c; 
+  color: #d13a9c;
   text-decoration: underline;
 }
 
-
-/* CONTENT-SETTINGS */
+/* CONTENT */
 #content-flex {
     display: flex;
-    /* EL ELEMENTO 'DISPLAY' DETERMINA EL ÓRDEN Y POSICIÓN DE LOS ELEMENTOS */
     justify-content: space-evenly;
-    align-items: flex-start
+    align-items: flex-start;
 }
 
-
-/* EXPLIACIÓN: EL ELEMENTO 'CONTENT' DEBE DIVIRSE EN DOS AJUSTES DE TAMAÑOS DIFERENTES, 'LEFT' Y 'RIGHT', PERO AMBOS CONCERVANDO OTROS AJUSTES DE DISEÑO EN COMÚN.
-PARA ESTO REQUERIMOS EL ELEMENTO 'CLASS' QUE SE IDENTIFICA CON UN PUNTO (.) AL INICIO */
 .content {
     margin-top: 20px;
+}
 
-    /* border:1px solid #000; PUEDES AÑADIR UN BORDE COMO GUÍA PARA LAS MEDIDAS*/
-    &.left {
-        width: 250px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between
-    }
+/* LEFT / CENTER / RIGHT */
+.content.left {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-    /* ES IMPORTANTE COLOCAR AL INICIO '&.' PARA QUE EL CÓDIGO LOS IDENTIFIQUE COMO UNA EXTENSIÓN DEL MISMO ELEMENTO Y SÓLO SEA EJECUTABLE DENTRO DE ESTE*/
-    &.center {
-        width: 530px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between
-    }
+.content.center {
+    width: 530px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-    &.right {
-        width: 250px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between
-    }
+.content.right {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .content-box,
 .box-small,
 #box-bottom {
-    border: 1px solid #972469
+    border: 1px solid #972469;
 }
 
-/* CUANDO DOS O MÁS ELEMENTOS CUENTAN, EN SU MAYORIA, CON LOS MISMOS AJUSTES DE DISEÑO/EJECUCIÓN, SE JUNTAN EN UNA MISMA LÍNEA DE CODIFICACIÓN Y SE DIVIDEN CON UNA COMA (,) */
 .content-box {
     width: 100%;
     margin-bottom: 20px;
@@ -200,12 +183,12 @@ h2 {
     padding: 5px;
     background-color: #ffd4ec;
     font: 18px 'Rock Bold';
-    text-align: center
+    text-align: center;
 }
 
 .box-small {
     width: 260px;
-    margin-top: 20px
+    margin-top: 20px;
 }
 
 #box-bottom {
@@ -213,38 +196,40 @@ h2 {
     margin: auto;
     margin-top: 10px;
     background-color: #ffd4ec;
-    text-align: center
+    text-align: center;
 }
 
 .Highlight-text {
     background-color: #ffd4ec;
     font-weight: 600;
     padding: 2px 5px;
-    border-radius: 5px
+    border-radius: 5px;
 }
 
+/* SCROLLS */
 .content.right .content-box {
-  max-height: 200px; 
+  max-height: 200px;
   overflow-y: auto;
 }
 
 .content.left .content-box {
-  max-height: 400px; 
+  max-height: 400px;
   overflow-y: auto;
 }
 
 .updates-scroll {
-  max-height: 150px; 
+  max-height: 150px;
   overflow-y: auto;
-  padding-right: 8px; 
+  padding-right: 8px;
 }
 
 .nav-scroll {
-  max-height: 300px; 
+  max-height: 300px;
   overflow-y: auto;
-  padding-right: 8px; 
+  padding-right: 8px;
 }
 
+/* BOTÓN */
 .more-button {
   display: inline-block;
   margin-top: 10px;
@@ -298,9 +283,10 @@ h2 {
 
 .category li {
   margin: 6px 0;
-  list-style: url('/img/icon-.gif') inside; 
+  list-style: url('/img/icon-.gif') inside;
 }
 
+/* SOBRE MI */
 .interests-table,
 .content.right .content-box {
   max-height: none !important;
@@ -317,4 +303,25 @@ h2 {
 
 .about-layout .about-left {
   width: 250px;
+}
+
+.profile-pic {
+    width: 235px;
+    height: 235px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.about-left .content-box {
+    overflow: visible;
+    height: auto;
+}
+
+.about-layout {
+    align-items: flex-start;
+}
+
+.about-left {
+    overflow: visible;
 }
