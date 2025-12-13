@@ -3,31 +3,33 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Portfolio - yoyo yuu">
-    <div id="content-flex" class="flex justify-center items-start mt-4">
+    <div class="flex justify-center items-start">
         <!-- Sidebar -->
         <div class="w-[180px] mr-4">
             <div class="sticky top-4 space-y-4">
                 <!-- Stats -->
                 <div
-                    class="content-box border border-brand-pink p-3 text-center"
+                    class="border border-brand-pink rounded overflow-hidden p-3 text-center"
                 >
                     <div class="text-2xl font-rock-bold text-brand-pink mb-1">
                         XX
                     </div>
-                    <div class="text-sm">ilustraciones</div>
+                    <div class="text-sm">Illustrations</div>
                 </div>
 
-                <!-- Categorias random -->
-                <div class="content-box border border-brand-pink p-3">
+                <!-- Categorias -->
+                <div
+                    class="border border-brand-pink rounded overflow-hidden p-3"
+                >
                     <div
                         class="font-rock-bold text-brand-pink mb-2 text-center text-sm"
                     >
-                        CATEGORÍAS
+                        CATEGORIES
                     </div>
                     <div class="space-y-1">
                         <button
                             class="w-full text-left text-sm p-1 hover:text-blue-600"
-                            >Destacados</button
+                            >Highlights</button
                         >
                         <button
                             class="w-full text-left text-sm p-1 hover:text-blue-600"
@@ -36,10 +38,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                         <button
                             class="w-full text-left text-sm p-1 hover:text-blue-600"
                             >Fanart</button
-                        >
-                        <button
-                            class="w-full text-left text-sm p-1 hover:text-blue-600"
-                            >Chibi</button
                         >
                         <button
                             class="w-full text-left text-sm p-1 hover:text-blue-600"
@@ -52,32 +50,34 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                     </div>
                 </div>
 
-                <!-- Botoncito de comisiones -->
+                <!-- Botón de comisiones -->
                 <a
                     href="/comisiones"
-                    class="block content-box border border-brand-pink p-3 text-center bg-[#ffb3d9] hover:bg-[#ff8cc7] transition-colors"
+                    class="block border border-brand-pink rounded overflow-hidden p-3 text-center bg-[#ffb3d9] hover:bg-[#ff8cc7] transition-colors"
                 >
                     <div class="font-bold text-[#7b0e55] text-sm">
-                        Comisiones cerradas
+                        Commisision Me!
                     </div>
                 </a>
             </div>
         </div>
 
-        <!-- Aqui va la galeria -->
+        <!-- Galería -->
         <div class="w-[900px]">
-            <div class="content-box border border-brand-pink">
+            <div class="border border-brand-pink rounded overflow-hidden">
                 <div
                     class="p-3 border-b border-brand-pink bg-brand-light-pink flex justify-between items-center"
                 >
-                    <h2 class="m-0 font-rock-bold text-brand-pink">PORTAFOLIO</h2>
+                    <h2 class="m-0 font-rock-bold text-brand-pink">
+                        PORTFOLIO
+                    </h2>
                     <div class="text-sm">
-                        Ordenar por:
+                        Order by:
                         <select
                             class="ml-2 border border-brand-pink rounded bg-white px-2 py-1"
                         >
-                            <option>Más reciente</option>
-                            <option>Más antiguo</option>
+                            <option>Newest</option>
+                            <option>oldest</option>
                         </select>
                     </div>
                 </div>
@@ -94,10 +94,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                                 </div>
                                 <div class="text-center">
                                     <div class="font-medium text-brand-pink">
-                                        Título #{i + 1}
+                                        Title #{i + 1}
                                     </div>
                                     <div class="text-xs text-gray-500">
-                                        Categoría • 2025
+                                        Category • 2025
                                     </div>
                                 </div>
                             </div>

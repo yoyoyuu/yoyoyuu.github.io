@@ -1,0 +1,62 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Comisiones - yoyo yuu">
+  <div class="flex justify-center">
+    <div class="w-[800px]">
+      <!-- Tabla de precios -->
+      <div class="border border-brand-pink rounded overflow-hidden mb-4">
+        <h2 class="m-0 p-2 bg-brand-light-pink text-lg font-rock-bold text-center border-b border-brand-pink">
+          PRICES AND STYLES
+        </h2>
+        <div class="p-3">
+          <table class="w-full">
+            <thead>
+              <tr class="bg-brand-light-pink/50">
+                <th class="p-2 text-left">Style</th>
+                <th class="p-2 text-left">Price</th>
+                <th class="p-2 text-left">Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-brand-pink/30">
+                <td class="p-2">Section 1</td>
+                <td class="p-2">xx</td>
+                <td class="p-2">xx</td>
+              </tr>
+              <tr class="border-b border-brand-pink/30">
+                <td class="p-2">Section 2</td>
+                <td class="p-2">xx</td>
+                <td class="p-2">xx</td>
+              </tr>
+              <tr>
+                <td class="p-2">Section 3</td>
+                <td class="p-2">xx</td>
+                <td class="p-2">xx</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Términos y condiciones -->
+      <div class="border border-brand-pink rounded overflow-hidden">
+        <h2 class="m-0 p-2 bg-brand-light-pink text-lg font-rock-bold text-center border-b border-brand-pink">
+          COMMISSION PROCESS
+        </h2>
+        <div class="p-3">
+          <ol class="list-decimal pl-5 space-y-1 mb-4">
+            <li>PENDING</li>
+          </ol>
+          
+          <div class="text-center">
+            <a href="mailto:tuemail@ejemplo.com" class="inline-block bg-[#ffb3d9] px-6 py-2 rounded-lg no-underline font-bold text-[#7b0e55] hover:bg-[#ff8cc7] text-base">
+              REQUEST A COMMISSION
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

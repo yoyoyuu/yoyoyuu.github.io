@@ -1,20 +1,20 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Header from "../components/core/Header.astro";
-import Navigation from "../components/Navigation.astro";
 ---
 
 <BaseLayout title="About me - yoyo yuu">  
-  <div id="content-flex" class="flex justify-evenly items-start mt-4">
+  <div id="content-flex" class="flex justify-evenly items-start gap-x-4">
     <!-- LEFT SIDE - IDENTITY INFO -->
-    <div class="content left w-[250px]">
-      <div class="content-box border border-brand-pink overflow-hidden">
+    <div class="w-[250px]">
+      <div class="border border-brand-pink rounded overflow-hidden mb-4">
         <img
           src="/img/yoyome.png"
           alt="Yoyo yuu"
           class="w-[235px] h-[235px] object-cover block mx-auto my-4"
         />
-        <h2 class="m-0 p-[8px] bg-brand-light-pink text-[18px] font-rock-bold text-center border-b border-brand-pink">SOME YOYO INFO</h2>
+        <h2 class="m-0 p-2 bg-brand-light-pink text-lg font-rock-bold text-center border-b border-brand-pink">
+          SOME YOYO INFO
+        </h2>
 
         <div class="p-3">
           <ul class="list-[url('img_index/icon-.gif')] list-inside text-sm space-y-1 m-0 p-0">
@@ -31,62 +31,62 @@ import Navigation from "../components/Navigation.astro";
     </div>
 
     <!-- CENTER CONTENT - SOBRE MÍ -->
-    <div class="content center w-[530px]">
+    <div class="w-[530px]">
       <!-- SOBRE MÍ -->
-      <div class="content-box w-full mb-5 border border-brand-pink">
-        <h2 class="m-0 p-[5px] bg-brand-light-pink text-[18px] font-rock-bold text-center border-b border-brand-pink">
+      <div class="border border-brand-pink rounded overflow-hidden mb-4">
+        <h2 class="m-0 p-2 bg-brand-light-pink text-lg font-rock-bold text-center border-b border-brand-pink">
           SOBRE MÍ
         </h2>
         <div class="p-3">
-          <p class="my-2">
-            ¡Holiiii! Me llamo Isis Vanesa, pero en internet me conocen como Yoyo, yoyo yuu, yoyonia, como sea!
+          <p class="mb-2">
+            Hi! My name is Isis Vanesa, but on the internet I'm known as Yoyo, yoyo yuu, yoyonia, whatever!
           </p>
-          <p class="my-2">
-            Soy un intento de artista digital que disfruta de dibujar sus personajes favoritos. Me encantan muchas cosas y cuando me obsesiono con un personaje, va totalmente en serio lamentablemente (o afortunadamente).
+          <p class="mb-0">
+            I'm a digital artist who enjoys drawing my favorite characters. I love many things, and when I get obsessed with a character, I'm totally serious, unfortunately (or fortunately).
           </p>
         </div>
       </div>
 
       <!-- POR QUÉ ESTE SITIO -->
-      <div class="content-box w-full border border-brand-pink">
-        <h2 class="m-0 p-[5px] bg-brand-light-pink text-[18px] font-rock-bold text-center border-b border-brand-pink">
-          ¿Por qué un sitio web?
+      <div class="border border-brand-pink rounded overflow-hidden">
+        <h2 class="m-0 p-2 bg-brand-light-pink text-lg font-rock-bold text-center border-b border-brand-pink">
+          Why this site?
         </h2>
         <div class="p-3">
-          <p class="my-2">
-            Mi propósito al crear un sitio web es tener un espacio totalmente personal donde tengo control absoluto sobre lo que comparto y cómo lo comparto, sin depender de plataformas externas.
+          <p class="mb-2">
+            My purpose in creating a website is to have a completely personal space where I have absolute control over what I share and how I share it, without depending on external platforms.
           </p>
-          <p class="my-2">
-            También sigo aprendiendo desarrollo web como hobby entre vacaciones, y con los conocimientos que adquiero como estudiante de ingeniería en software, este sitio me permite practicar, experimentar y mejorar mis habilidades.
+          <p class="mb-0">
+            I also continue to learn web development as a hobby during vacations, and with the knowledge I acquire as a software engineering student, this site allows me to practice, experiment and improve my skills.
           </p>
         </div>
       </div>
     </div>
 
-    <!-- RIGHT SIDE - INTERESES (estructura como la imagen) -->
-    <div class="content right w-[250px]">
-      <div class="content-box border border-brand-pink">
-        <h2 class="m-0 p-[5px] bg-brand-light-pink text-[18px] font-rock-bold text-center border-b border-brand-pink">
-          INTERESES
+    <!-- RIGHT SIDE - INTERESES -->
+    <div class="w-[250px]">
+      <div class="border border-brand-pink rounded overflow-hidden">
+        <h2 class="m-0 p-2 bg-brand-light-pink text-lg font-rock-bold text-center border-b border-brand-pink">
+          INTERESTS
         </h2>
-        <div class="p-4">
+        <div class="p-3">
           <!-- General -->
-          <div class="mb-5">
-            <h3 class="m-0 mb-2 text-[16px] font-rock-bold text-brand-pink border-b border-brand-pink/30 pb-1">
+          <div class="mb-3">
+            <h3 class="m-0 mb-1 text-sm font-rock-bold text-brand-pink">
               General
             </h3>
             <ul class="list-[url('img_index/icon-.gif')] list-inside text-sm space-y-1 m-0 p-0">
-              <li>Dibujo digital</li>
-              <li>OCs & historias</li>
-              <li>Anime y Manga</li>
-              <li>Videojuegos casuales</li>
-              <li>Diseño web</li>
+              <li>Digital drawinf</li>
+              <li>OCs & stories</li>
+              <li>Anime & Manga</li>
+              <li>Casual videogames</li>
+              <li>Web design</li>
             </ul>
           </div>
 
           <!-- Series -->
-          <div class="mb-5">
-            <h3 class="m-0 mb-2 text-[16px] font-rock-bold text-brand-pink border-b border-brand-pink/30 pb-1">
+          <div class="mb-3">
+            <h3 class="m-0 mb-1 text-sm font-rock-bold text-brand-pink">
               Series
             </h3>
             <ul class="list-[url('img_index/icon-.gif')] list-inside text-sm space-y-1 m-0 p-0">
@@ -98,9 +98,9 @@ import Navigation from "../components/Navigation.astro";
           </div>
 
           <!-- Música -->
-          <div class="mb-5">
-            <h3 class="m-0 mb-2 text-[16px] font-rock-bold text-brand-pink border-b border-brand-pink/30 pb-1">
-              Música
+          <div class="mb-3">
+            <h3 class="m-0 mb-1 text-sm font-rock-bold text-brand-pink">
+              Music
             </h3>
             <ul class="list-[url('img_index/icon-.gif')] list-inside text-sm space-y-1 m-0 p-0">
               <li>Queen</li>
@@ -111,26 +111,14 @@ import Navigation from "../components/Navigation.astro";
           </div>
 
           <!-- Videojuegos -->
-          <div class="mb-5">
-            <h3 class="m-0 mb-2 text-[16px] font-rock-bold text-brand-pink border-b border-brand-pink/30 pb-1">
-              Videojuegos
+          <div class="mb-3">
+            <h3 class="m-0 mb-1 text-sm font-rock-bold text-brand-pink">
+              Videogames
             </h3>
             <ul class="list-[url('img_index/icon-.gif')] list-inside text-sm space-y-1 m-0 p-0">
               <li>Pokemon</li>
               <li>Deltarune</li>
               <li>Lo que me obsesione ese mes</li>
-            </ul>
-          </div>
-
-          <!-- Si quieres agregar más como en la imagen: -->
-          <div class="mb-5">
-            <h3 class="m-0 mb-2 text-[16px] font-rock-bold text-brand-pink border-b border-brand-pink/30 pb-1">
-              Libros/Manga
-            </h3>
-            <ul class="list-[url('img_index/icon-.gif')] list-inside text-sm space-y-1 m-0 p-0">
-              <li>Boku no Hero Academia (manga)</li>
-              <li>Spy x Family (manga)</li>
-              <li>Varios fanfics</li>
             </ul>
           </div>
         </div>
